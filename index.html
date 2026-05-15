@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GEC 6 E-Portfolio | Clifford Niño F. Gerona</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ─── CANVAS PARTICLE BACKGROUND ─── -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ─── NAV ─── -->
+  <nav id="navbar">
+<div class="nav-inner">
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#artifacts">Artifacts</a></li>
+        <li><a href="#reflections">Reflections</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="nav-mobile" id="nav-mobile">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#artifacts">Artifacts</a></li>
+      <li><a href="#reflections">Reflections</a></li>
+      <li><a href="#feedback">Feedback</a></li>
+    </ul>
+  </nav>
+
+  <!-- ════════════════════════════════════
+       SECTION 1 — HERO / COVER
+  ════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg-glow"></div>
+
+    <!-- floating CNSC logo with parallax -->
+    <div class="hero-logo-wrap" id="cnsc-logo-wrap">
+      <img src="asset/cnsc_logo.png" alt="CNSC Logo" class="cnsc-logo" id="cnsc-logo" />
+      <div class="logo-ring"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">GEC 6 &mdash; Visual Arts E-Portfolio</div>
+
+      <h1 class="hero-name reveal-up" style="--d:0.1s">
+        Clifford Niño<br/><span class="accent-text">F. Gerona</span>
+      </h1>
+
+      <p class="hero-sub reveal-up" style="--d:0.2s">
+        BSIT &mdash; 2A &nbsp;|&nbsp; Camarines Norte State College
+      </p>
+
+      <div class="hero-divider reveal-up" style="--d:0.3s"></div>
+
+      <p class="hero-tagline reveal-up" style="--d:0.35s">
+        Where <em>logical code</em> meets <em>artistic vision</em> — a digital canvas of growth, discovery, and creative awakening.
+      </p>
+
+      <div class="hero-cta-row reveal-up" style="--d:0.45s">
+        <a href="#artifacts" class="btn-primary">View Artifacts</a>
+        <a href="#reflections" class="btn-ghost">Read Reflections</a>
+      </div>
+    </div>
+
+    <!-- student photo -->
+    <div class="hero-photo-wrap reveal-right" style="--d:0.2s">
+      <div class="photo-geo-shadow"></div>
+      <div class="photo-frame">
+        <img src="asset/clifford_photo.jpg" alt="Clifford Niño F. Gerona" class="hero-photo" />
+      </div>
+      <div class="photo-accent-bar"></div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 2 — COURSE EXPERIENCE
+  ════════════════════════════════════ -->
+  <section id="experience" class="section-padded">
+    <div class="container">
+
+      <div class="section-label reveal-up">02 &mdash; Course Experience</div>
+      <h2 class="section-title reveal-up" style="--d:0.05s">
+        When Logic <span class="accent-text">Learned</span> to Paint
+      </h2>
+
+      <div class="experience-grid">
+        <!-- big quote card -->
+        <div class="exp-quote-card glass reveal-up" style="--d:0.1s">
+          <div class="quote-mark">&ldquo;</div>
+          <p class="quote-text">
+            GEC 6 didn't just teach me what art <em>is</em> — it taught me that everything I build as a developer <em>is already art</em>, whether I treat it that way or not.
+          </p>
+          <span class="quote-attr">— Clifford Niño F. Gerona</span>
+        </div>
+
+        <!-- reflection blocks -->
+        <div class="exp-blocks">
+          <div class="exp-block glass reveal-up" style="--d:0.15s">
+            <div class="exp-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <div>
+              <h3>A Programmer's First Brush Stroke</h3>
+              <p>
+                Coming into GEC 6 as a second-year BSIT student, I carried the mindset of a programmer: everything had to be logical, structured, and purposeful. Art felt abstract and subjective — the opposite of the systems I was used to building. But the course dismantled that rigid wall. My first encounter with the visual elements — line, shape, color, value, texture, and space — felt eerily familiar. These weren't just art concepts; they were the very vocabulary of every interface I had ever coded. A horizontal line wasn't just a design choice; it was a <em>separator element</em> with visual weight and intent.
+              </p>
+            </div>
+          </div>
+
+          <div class="exp-block glass reveal-up" style="--d:0.2s">
+            <div class="exp-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            </div>
+            <div>
+              <h3>Composition & the Grid System</h3>
+              <p>
+                The lesson on composition — the rule of thirds, balance, and visual hierarchy — was the moment everything clicked. I had been using CSS Grid and Flexbox for months without understanding <em>why</em> certain layouts felt right. Art theory gave me the language: a centered, symmetrical layout communicates stability and formality; an asymmetric grid suggests dynamism and modernity. Suddenly, my design decisions weren't arbitrary. I was making conscious, intentional choices backed by centuries of visual art philosophy.
+              </p>
+            </div>
+          </div>
+
+          <div class="exp-block glass reveal-up" style="--d:0.25s">
+            <div class="exp-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <div>
+              <h3>Color Theory → UI/UX Superpower</h3>
+              <p>
+                Color theory was arguably the most transformative part of the course for my development work. Learning about hue, saturation, value, and color harmony (complementary, analogous, triadic) directly upgraded my ability to design interfaces that are not only functional but emotionally resonant. I learned that a deep charcoal background with a vibrant cyan accent isn't just "dark mode" — it's a deliberate emotional statement: technical precision, forward-looking energy, and creative tension. Every palette I now choose tells a story before a single line of text is read.
+              </p>
+            </div>
+          </div>
+
+          <div class="exp-block glass reveal-up" style="--d:0.3s">
+            <div class="exp-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.5 14.5L5 19m0 0h4m-4 0v-4M14.5 9.5L19 5m0 0h-4m4 0v4"/></svg>
+            </div>
+            <div>
+              <h3>The Bigger Picture: Art as Empathy</h3>
+              <p>
+                Perhaps the most profound lesson was understanding art as a form of empathy — an attempt to communicate feelings, ideas, and experiences across time and culture. As a future IT professional, I will build systems that millions of people interact with. GEC 6 reminded me that behind every screen, every button, every pixel, there is a human being with emotions and expectations. Designing with that awareness — with artistic sensitivity and technical precision — is the difference between software that merely functions and software that genuinely connects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 3 — ACADEMIC ARTIFACTS
+  ════════════════════════════════════ -->
+  <section id="artifacts" class="section-padded alt-bg">
+    <div class="container">
+
+      <div class="section-label reveal-up">03 &mdash; Academic Artifacts &amp; Outputs</div>
+      <h2 class="section-title reveal-up" style="--d:0.05s">
+        The <span class="accent-text">Gallery</span>
+      </h2>
+      <p class="section-sub reveal-up" style="--d:0.1s">
+        A curated collection of coursework outputs — each piece a milestone in my creative and intellectual growth throughout GEC 6.
+      </p>
+
+      <div class="artifacts-grid">
+
+        <article class="artifact-card glass reveal-up" style="--d:0.1s">
+          <div class="artifact-img-wrap">
+            <img src="asset/discussion_paper_preview.jpg" alt="Group Discussion Paper" class="artifact-img" loading="lazy" style="background-color: #1a1a24;"/>
+            <a href="asset/GEELEC6-Discussion-Paper-Group3-CINEMA.pdf" target="_blank" rel="noopener" class="artifact-img-overlay">
+              <span class="overlay-label">View PDF</span>
+            </a>
+            <div class="artifact-num">01</div>
+          </div>
+          <div class="artifact-body">
+            <div class="artifact-tag">Collaborative Writing</div>
+            <h3 class="artifact-title">Group Discussion Paper</h3>
+            <p class="artifact-desc">
+              A comprehensive discussion paper exploring the evolution and cultural impact of cinema. This collaborative document synthesizes research, critical analysis, and group insights to evaluate how visual storytelling shapes societal perspectives.
+            </p>
+            <div class="artifact-meta">
+              <span class="meta-pill">Research</span>
+              <span class="meta-pill">Cinema</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artifact-card glass reveal-up" style="--d:0.15s">
+          <div class="artifact-img-wrap">
+            <img src="asset/ppt_preview.jpg" alt="PowerPoint Presentation" class="artifact-img" loading="lazy" style="background-color: #1a1a24;"/>
+            <a href="https://canva.link/y96b6iou5snbqp9" target="_blank" rel="noopener" class="artifact-img-overlay">
+              <span class="overlay-label">Open Link</span>
+            </a>
+            <div class="artifact-num">02</div>
+          </div>
+          <div class="artifact-body">
+            <div class="artifact-tag">Visual Deck</div>
+            <h3 class="artifact-title">PowerPoint Presentation</h3>
+            <p class="artifact-desc">
+              The slide deck utilized for our group report. Designing this presentation required translating dense academic research into digestible, visually engaging slides, balancing information density with aesthetic clarity to maintain audience engagement.
+            </p>
+            <div class="artifact-meta">
+              <span class="meta-pill">Presentation</span>
+              <span class="meta-pill">Information Design</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artifact-card glass reveal-up" style="--d:0.2s">
+          <div class="artifact-img-wrap">
+            <img src="asset/video_thumbnail.jpg" alt="Video Presentation" class="artifact-img" loading="lazy" style="background-color: #1a1a24;"/>
+            <a href="https://youtu.be/7Tm2ck-NfT0?si=jW6zySlR7pDdM39z" target="_blank" rel="noopener" class="artifact-img-overlay">
+              <span class="overlay-label">Watch on YouTube</span>
+            </a>
+            <div class="artifact-num">03</div>
+          </div>
+          <div class="artifact-body">
+            <div class="artifact-tag">Multimedia</div>
+            <h3 class="artifact-title">Video Presentation</h3>
+            <p class="artifact-desc">
+              The final video recording of our group report. This artifact demonstrates the practical application of visual communication principles, combining audio-visual elements, pacing, and clear delivery to effectively present our findings on cinema.
+            </p>
+            <div class="artifact-meta">
+              <span class="meta-pill">Video</span>
+              <span class="meta-pill">Reporting</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 4 — REFLECTIONS
+  ════════════════════════════════════ -->
+  <section id="reflections" class="section-padded">
+    <div class="container">
+
+      <div class="section-label reveal-up">04 &mdash; Artifact Reflections</div>
+      <h2 class="section-title reveal-up" style="--d:0.05s">
+        The <span class="accent-text">Inner Work</span>
+      </h2>
+      <p class="section-sub reveal-up" style="--d:0.1s">
+        Reflection is the cornerstone of genuine learning. These written reflections document not just <em>what</em> I produced, but <em>how</em> each artifact transformed my thinking as a student, a creator, and a future technologist.
+      </p>
+
+      <div class="reflection-feature reveal-up" style="--d:0.15s">
+        <div class="reflection-preview-col">
+          <a href="asset/individual_reflections.pdf" target="_blank" rel="noopener" class="reflection-pdf-link" title="Click to open Individual Reflections PDF">
+            <div class="pdf-frame glass">
+              <img src="asset/reflection_preview.jpg" alt="Individual Reflections Document Preview" class="pdf-preview-img" />
+              <div class="pdf-overlay">
+                <div class="pdf-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                </div>
+                <span>Open PDF</span>
+              </div>
+            </div>
+            <div class="pdf-badge">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.5 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V9.5L12.5 2zM12 3.5V9h5.5L12 3.5z"/></svg>
+              individual_reflections.pdf
+            </div>
+          </a>
+        </div>
+
+        <div class="reflection-text-col glass">
+          <h3>Individual Artifact Reflections</h3>
+          <p>
+            Each artifact in this portfolio is accompanied by a personal reflection — a written account of the creative process, the challenges encountered, the lessons internalized, and the connections drawn to my life and career as a BSIT student.
+          </p>
+          <p>
+            The compiled document on the left contains all individual reflections in full. These are not summaries or reports; they are honest, introspective accounts of a technology student learning to think like an artist — and discovering that the two disciplines were never as different as they seemed.
+          </p>
+          <ul class="reflection-list">
+            <li>
+              <span class="list-dot"></span>
+              <strong>Reflection on Art Activity 1</strong> — Finding structure in creative freedom and realizing how much visual instinct I had already developed through years of coding.
+            </li>
+            <li>
+              <span class="list-dot"></span>
+              <strong>Reflection on the Visual Elements Quiz</strong> — The moment theory met practice, and I stopped memorizing definitions and started seeing elements everywhere.
+            </li>
+            <li>
+              <span class="list-dot"></span>
+              <strong>Reflection on the Video Reporting Activity</strong> — Discovering that presenting visually to an audience is a design problem with a human solution.
+            </li>
+          </ul>
+          <a href="asset/individual_reflections.pdf" target="_blank" rel="noopener" class="btn-primary btn-sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Open Full Reflections PDF
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 5 — INSTRUCTOR FEEDBACK
+  ════════════════════════════════════ -->
+  <section id="feedback" class="section-padded alt-bg">
+    <div class="container">
+
+      <div class="section-label reveal-up">05 &mdash; Instructor Feedback</div>
+      <h2 class="section-title reveal-up" style="--d:0.05s">
+        A Letter of <span class="accent-text">Gratitude</span>
+      </h2>
+
+      <div class="feedback-layout">
+
+        <div class="instructor-profile glass reveal-up" style="--d:0.1s">
+          <div class="instructor-photo-wrap">
+            <img src="asset/instructor_photo.jpg" alt="Ma'am Jhonna D. Alcantara" class="instructor-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="instructor-initials" style="display:none">JA</div>
+            <div class="instructor-glow-ring"></div>
+          </div>
+          <div class="instructor-info">
+            <h3>Ma'am Jhonna D. Alcantara</h3>
+            <span class="instructor-role">GEC 6: Visual Arts</span>
+            <span class="instructor-school">Camarines Norte State College</span>
+          </div>
+          <div class="instructor-divider"></div>
+          <div class="instructor-stats">
+            <div class="stat-item">
+              <span class="stat-val">GEC 6</span>
+              <span class="stat-label">Subject</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-val">2A</span>
+              <span class="stat-label">Block</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-val">A.Y. 25–26</span> <span class="stat-label">Term</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="feedback-letter glass reveal-up" style="--d:0.15s">
+        <div class="letter-header">
+            <div class="letter-date">Daet, Camarines Norte &mdash; May 2026</div> 
+            <div class="letter-to">To Ma'am Jhonna D. Alcantara,</div>
+          </div>
+
+          <div class="letter-body">
+            <p>
+              Writing this feedback letter is, in itself, an exercise in everything GEC 6 taught me: finding the right words, arranging them with intention, and ensuring that the structure serves the emotion. So with that lens, allow me to offer my deepest and most sincere gratitude.
+            </p>
+            <p>
+              When I first enrolled in GEC 6: Visual Arts, I will be honest — I was uncertain about its relevance to my program. I am a BSIT student. I think in loops and conditionals, in functions and frameworks. Art, I thought, was a different world, spoken in a different language. You showed me, patiently and systematically, that this was never true.
+            </p>
+            <p>
+              What struck me most from the very beginning was the clarity and fairness of your rubrics. In a subject that could easily feel subjective, you created a structure where effort, growth, and creativity were measurable and rewarded equally. The video report rubric, for instance, wasn't just a grading tool — it was a masterclass in expectation-setting. It showed me what excellent communication looks like before I even attempted it, which is precisely how the best software requirements documents should work.
+            </p>
+            <p>
+              Your teaching style made complex art theory approachable without ever making it feel simplified. You connected classical concepts — the visual elements, composition, color harmony — to contexts that made sense to us as 21st-century students. The way you structured discussions, welcomed questions, and provided consistent feedback created a classroom environment where it was genuinely safe to experiment and even to fail beautifully.
+            </p>
+            <p>
+              The activities you designed were not busywork. Each one was a carefully placed stepping stone that built upon the last. I entered this course knowing how to write code. I leave it knowing how to <em>design</em> — truly design — with intention, empathy, and an eye trained to see balance, hierarchy, and beauty where I once saw only layout.
+            </p>
+            <p>
+              As I continue my journey in Information Technology, I carry with me the knowledge that the best interfaces are not just functional — they are felt. That understanding is your gift to me, Ma'am. For that, I am profoundly grateful.
+            </p>
+          </div>
+
+          <div class="letter-footer">
+            <div class="letter-close">
+              <p>With deep respect and sincere appreciation,</p>
+              <div class="signature-block">
+                <span class="signature-name">Clifford Niño F. Gerona</span>
+                <span class="signature-sub">BSIT 2A — GEC 6 Student</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer id="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo-col">
+        <img src="asset/cnsc_logo.png" alt="CNSC" class="footer-cnsc" />
+        <p>Camarines Norte State College<br/>College of Engineering &amp; Information Technology</p>
+      </div>
+      <div class="footer-center">
+        <p class="footer-title">GEC 6: Visual Arts E-Portfolio</p>
+        <p class="footer-name">Clifford Niño F. Gerona &mdash; BSIT 2A</p>
+        <p class="footer-copy">&copy; 2026 All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <p class="footer-ack">Built with code, shaped by art.</p>
+        <div class="footer-accent-dots">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
